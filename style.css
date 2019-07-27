@@ -1,0 +1,166 @@
+@font-face {
+font-family: "GT-Walsheim";
+src: url("fonts/gt-walsheim-ultra-bold-web-webfont.ttf");
+src: url("fonts/gt-walsheim-ultra-bold-web-webfont.woff") format("woff");
+src: url("fonts/gt-walsheim-ultra-bold-web-webfont.woff2") format("woff2");
+}
+
+
+
+body {
+	cursor: crosshair;
+
+
+  
+
+}
+
+#canvas {
+	width: 100vw;
+	height: 100vh;
+	
+	z-index: 20;
+}
+
+#container {
+	position: fixed;
+
+	height: 100vh;
+	width: 100vw;
+	border:6px solid white;
+/*	border-bottom:10px solid white;*/
+
+	 box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+    z-index: 0;
+}
+
+
+.mainTitle {
+	
+
+	margin:auto;
+	text-align: center;
+	display: block;
+	font-family: 'GT-Walsheim', serif;
+	font-size: 200px;
+	/*color: rgba(0,0,0,0);*/
+	color: white;
+	-webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: white;
+   	transition: color .2s;
+
+   	cursor: crosshair;
+   	z-index: 20;
+
+
+   	-webkit-user-select: none; /* Safari */        
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+/Edge */
+user-select: none; /* Standard */
+  
+
+}
+
+.mainTitle:hover {
+
+	color: rgba(0,0,0,0);
+
+}
+
+
+
+h2 {
+	text-align: right;
+	position: fixed;
+	right:40px;
+	bottom: 10px;
+	font-family: 'GT-Walsheim', serif;
+	font-size: 20px;
+	color:white;
+}
+
+h2:hover{
+	color: rgba(0,0,0,0);
+	-webkit-text-stroke-width:1px;
+  -webkit-text-stroke-color: white;
+   	transition: color .2s;
+   	cursor: crosshair;
+}
+
+
+.mainTitle > span:hover {
+
+	transition: color .5s;
+	color: white;
+	cursor: crosshair;
+
+}
+/*#BB:hover, #UU:hover, #SS:hover, #bb:hover,#OO:hover,#YY:hover  {
+	transition: color .5s;
+	color: black;
+	cursor: crosshair;
+
+}*/
+
+
+#pop-up{
+	position: absolute;
+	right:200px;
+	bottom:60px;
+	margin:auto;
+	align-content: center;
+	display:none;
+	z-index: 0;
+}
+#popupImage {
+	width:590px;
+	height: auto;
+	opacity: .8;
+
+}
+
+#popupImageName {
+	width:150px;
+	height: auto;
+	
+}
+
+#aboutX {
+	width: 20px;
+	height: auto;
+	position: absolute;
+	right: 10px;
+	top:10px;
+}
+
+#about {
+
+	position: relative;
+	font-family: Futura;
+	color: #339999;
+	margin:auto;
+	top:25%;
+	width: 40%;
+	padding:20px;
+	background-color: white;
+	/*border: 5px solid #339999;*/
+	z-index: 150;
+	display: none;
+
+}
+
+#mc_embed_signup {
+	font-family: Futura;
+	
+
+
+}
+
+#mc_embed_signup input {
+	border: 1px solid #339999;
+
+
+}
