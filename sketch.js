@@ -19,7 +19,6 @@ let letter;
 let imgnumber = 0;
 
 
-
 let plusOrMinus = Math.random() < 0.5 ? -1 : 1;
 
 function preload() {
@@ -46,9 +45,9 @@ function setup() {
 
   textAlign(CENTER);
 
-  txt = createDiv('<span id="BB">B</span><span id="uu">U</span><span id="ss">S</span><span id="bb">B</span><span id="oo">O</span><span id="yy">Y</span>');
-  // txt.position(300, 300);
-  txt.class('mainTitle');
+  // txt = createDiv('<span class="break"><span id="BB">B</span><span id="uu">U</span><span id="ss">S</span></span><span class="break"><span id="bb">B</span><span id="oo">O</span><span id="yy">Y</span></span>');
+  // // txt.position(300, 300);
+  // txt.class('mainTitle');
 
   BB = select('#BB');
   uu = select('#uu');
@@ -78,7 +77,7 @@ function draw() {
   let xMap = map(mouseX, 0, 300, 300+8, 300);
   let yMap = map(mouseY, 0, 200, 200+8, 200);
 
-  txt.position(xMap, yMap);
+  // txt.position(xMap, yMap);
 
   x = x + xspeed;
   y = y + yspeed;
@@ -121,18 +120,10 @@ function changeImage() {
     var randomFromRight = ((Math.random() * 30) );
     var randomFromBottom = ((Math.random() * 30) );
 
-
     $("#popupImage").attr("src","gifs1/" + imgnumber + ".gif");
-
-    console.log(imgnumber);
-
-    
-
-
     $("#pop-up").css("right",randomFromRight + "%");
     $("#pop-up").css("bottom",randomFromBottom + "%");
     $("#pop-up").show();
-
 }
 
 function hideImage(){
